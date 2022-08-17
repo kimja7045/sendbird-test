@@ -17,10 +17,6 @@ const KEVIN_USER = {
 const IntroScreen = ({ navigation }) => {
   const [currentUser, setCurrentUser] = useState(null);
 
-  useEffect(() => {
-    onConnectSendbird();
-  }, []);
-
   const onConnectSendbird = async (user) => {
     try {
       const res = await connectSendbird({
@@ -69,6 +65,7 @@ export default IntroScreen;
 const styles = StyleSheet.create({
   contentContainer: {
     flex: 1,
+    backgroundColor: '#fff',
     padding: 16,
     justifyContent: 'center',
   },
