@@ -24,7 +24,7 @@ const IntroScreen = ({ navigation }) => {
         nickname: user?.nickname,
         profileImage: user?.profileImage || '',
       });
-      console.log('res', res);
+      console.log('connectSendbird res', res);
 
       setCurrentUser(user);
     } catch (e) {
